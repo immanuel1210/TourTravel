@@ -23,7 +23,7 @@
                 </ul>
             </nav>
     </header>
-        <section>
+        <section class="content-hero">
             <div class="content-left">
                     <h1>Make Your Trip Memorable Book With Tour<span>avel.</span></h1>
                     <p>We have partners with several destination that you might feel at home there, we will guide you with our best service.</p>
@@ -76,37 +76,80 @@
                 <h5>The best service that will be with you every time</h5>
             </div>
             <div class="service-cards">
-                <div class="service-card start">
+                <div class="service-card start" onmouseover="mouseOn(this)" onmouseout="mouseOut(this)">
                     <div class="service-content">
                         <i class='bx bx-globe service-icon'></i>
                         <h5>Lot of Choices</h5>
                         <p>Total of more than 450 destinations in various countries in the world become partners with us</p>
+                        <a href="#">Learn more...</a>
                     </div>
                 </div>
-                <div class="service-card">
+                <div class="service-card" onmouseover="mouseOn(this)" onmouseout="mouseOut(this)">
                     <div class="service-content">
                         <i class='bx bx-group service-icon'></i>
                         <h5>Tour Guide</h5>
                         <p>There are 3 guides for each destination in the place you visit</p>
+                        <a href="#">Learn more...</a>
                     </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-content">
+                <div class="service-card" onmouseover="mouseOn(this)" onmouseout="mouseOut(this)">
+                    <div class="service-content" >
                         <i class='bx bx-cart-add service-icon' ></i>
                         <h5>Easy Booking</h5>
                         <p>We provide all services online which can be accessed easily through our website</p>
+                        <a href="#">Learn more...</a>
                     </div>
                 </div>
-                <div class="service-card end">
+                <div class="service-card end" onmouseover="mouseOn(this)" onmouseout="mouseOut(this)">
                     <div class="service-content">
                         <i class='bx bx-hotel service-icon' ></i>
                         <h5>Luxury Hotel</h5>
                         <p>We also provide lodging near the destination where are you visiting</p>
+                        <a href="#">Learn more...</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section>
+        <div class="destination">
+            <div class="destination-header">
+                <h6>TOP DESTINATION</h6>
+                <h3>Explore Top Destination</h3>
+            </div>
+            <div class="destination-button">
+                    <i id = "left"class='bx bx-chevron-left-circle'></i>
+                    <i id = "right"class='bx bx-chevron-right-circle'></i>
+            </div>
+        </div>
+        <div class="destination destination-cards">
+            <div class="destination-wrapper"></div>
+            <div class="destination-card">
+                <img src="assets/images/Rectangle 11.png" alt="">
+                <div class="destination-label">
+                    <div class="destination-category">
+                        <p class="label-category">Beach</p>
+                        <p class="label-price">$300</p>
+                    </div>
+                    <div class="destination-location">
+                        <h2>Kuta, Indonesia</h2>
+                    </div>
+                    <div class="destination-review">
+                        <i class='bx bxs-star'></i>
+                        <p>4.8 (1.6K Reviews)</p>
+                    </div>
+                    <div class="destination-desc">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam integer eget ut lorem. Lorem ipsum dolor sit amet, consectetur   </p>
+                    </div>
+                    <div class="destination-detail">
+                        <button class="btn-detail">Detail</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
 </body>
 <script src="assets/js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </html>
