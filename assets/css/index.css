@@ -282,19 +282,24 @@ nav ul li a:hover{
     font-size: 30px;
     color: #1F4590;
 }
-.destination-cards{
+.destination-wrapper{
     /* background-color: green; */
     width: 400px;
+    /* background-color: red; */
     border-radius: 20px;
+}
+.destination-cards{
+    margin-top:50px
+}
+.destination-card{
     position: relative;
     overflow: hidden;
 }
-
-.destination-cards:hover .destination-label{
+.destination-card:hover .destination-label{
     bottom: 0;
     transition: .5s ease-in-out;
 }
-.destination-cards img{
+.destination-card img{
     max-width: 400px;
 }
 
@@ -363,6 +368,15 @@ nav ul li a:hover{
     width: 200px;
     border-radius: 30px;
 }
+/* .swiper{
+    background-color: pink;
+}
+.swiper-wrapper{
+    background-color: orange; 
+} */
+/* .swiper-slide{
+    background-color: green;
+} */
 /* .destination-cards{
     /* width: calc(100% / 3); */
     /* position: relative;

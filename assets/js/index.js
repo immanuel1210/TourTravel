@@ -2,28 +2,25 @@ const menuIcon = document.querySelector('.menu-toggle');
 const menuActive = document.querySelector('ul');
 const serviceCard = document.querySelector('.service-card');
 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
+var swiper = new Swiper(".destination-cards", {
+  effect: "none",
+  grabCursor: true,
+  centeredSlides: false,
+  spaceBetween: 4,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
   },
-
-  // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+    nextEl: ".bx-chevron-right-circle",
+    prevEl: ".bx-chevron-left-circle",
+},
 });
-
 // const serviceCard = document.querySelectorAll('.service-card');
 // const sliderContainer = document.querySelector('.card-carousel');
 // const sliderContent = document.querySelector('.destination-card');
