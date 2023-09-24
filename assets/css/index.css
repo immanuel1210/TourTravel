@@ -368,6 +368,53 @@ nav ul li a:hover{
     width: 200px;
     border-radius: 30px;
 }
+/* end-destination */
+
+/* start- offer */
+.offer-box{
+    background-color: #1F4590;
+    max-width: 1200px;
+    margin: 100px auto auto auto;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+.offer-content{
+    text-align: center;
+}
+.offer-content h2{
+    margin-bottom: 10px;
+}
+.offer-content h4{
+    margin-top: 5px;
+}
+.offer-content button{
+    background-color: #355DAB;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 13px;
+}
+.offer-content button:hover{
+    border:solid #3170ef;
+}
+
+.offer-bookNow  button{
+    border: none;
+    border-radius: 30px;
+    background-color: #FFA451;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 20px 30px;
+}
+.offer-bookNow button:hover{
+    background-color: #ffbc7c;
+}
+/* end-offer */
 /* .swiper{
     background-color: pink;
 }
