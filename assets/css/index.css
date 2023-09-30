@@ -106,6 +106,7 @@ nav ul li a:hover{
     padding: 15px 35px;
     max-width: 210px;
     text-align: center;
+    /* Child dari relative harus selalu absolute agar nanti bisa menimpa parentnya */
     position:absolute;
     top: -60px;
 }
@@ -125,6 +126,7 @@ nav ul li a:hover{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    /* Parent dari absolute harus selalu relative agar bisa diposisikan */
     position: relative;
 }
 
@@ -197,7 +199,6 @@ nav ul li a:hover{
     font-weight: 100;
 }
 .service-card{
-    margin-top: 150px;
     background-color: #1F4590;
     color: white;
     height: 220px;
@@ -205,21 +206,7 @@ nav ul li a:hover{
     transition:0.5s;
     /* clip-path: polygon(0 100%, 100% 100%, 100% 37%, 0 37%); */
 }
-/* .service-card:hover{
-    border-radius: 50px 50px 0 0;
-    background-color: #FFA451;
-    height: 300px;
-    transition: 0.5s;
-} */
-/* .service-card.mouseOn{
-    background-color: #FFA451;
-    margin-top: 70px;
-    color: white;
-    height: 300px;
-    width: 300px;
-    transition:0.5s; */
-    /* clip-path: polygon(0 100%, 100% 100%, 100% 37%, 0 37%); */
-/* } */
+
 .start{
     border-radius: 50px 0 0 0;
 }
@@ -229,6 +216,8 @@ nav ul li a:hover{
 .service-cards{
     display: flex;
     justify-content: center;
+    height: 350px;
+    align-items:end;
 }
 .service-content{
     display: flex;
@@ -414,35 +403,22 @@ nav ul li a:hover{
 .offer-bookNow button:hover{
     background-color: #ffbc7c;
 }
-/* end-offer */
-/* .swiper{
-    background-color: pink;
+@media(max-width:1250px){
+    .service-cards{
+        /* Mengatur posisi item dari flex agar berada bagian pinggir bawaah container flex */
+        align-items: end;
+        /* Dengan wrap maka container akan dibungkus. Lebih interaktif daripada langsung dibuat jadi kolum */
+        flex-wrap: wrap;
+    }
+    .service-card{
+        border-radius: 0;
+    }
 }
-.swiper-wrapper{
-    background-color: orange; 
-} */
-/* .swiper-slide{
-    background-color: green;
-} */
-/* .destination-cards{
-    /* width: calc(100% / 3); */
-    /* position: relative;
-    background-color: yellow;
-} */
-/* .card-carousel{
-    display: flex;
-    overflow: hidden;
-    width: 630px;;
-    margin: 30px auto auto auto;
-    background-color: red;
-    /* gap: 10px;
-} */
-
-/* .destination-card img{
-    height: 200px;
-    margin-left: 10px;
-} */ 
-/* destination */
+@media(max-width:1200px){
+    .service-cards{
+        height: 600px;
+    }
+}
 @media (max-width:975px){
     header{
         display: block  ;
@@ -484,9 +460,27 @@ nav ul li a:hover{
     .card-carousel{
         width: 420px;
     }
+
 }
-@media (max-width:500px){
+@media (max-width:600px){
+    .service-cards{
+        height: 1000px;
+        flex-direction: column;
+        align-items: center;
+    }
     .card-carousel{
         width: 210px;
+    }
+    .hero{
+        width: 300px;
+    }
+    .locdate-wrapper{
+        height: 400px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .checkbox-icon-container{
+        flex-direction: column;
+        gap: 0;
     }
 }
