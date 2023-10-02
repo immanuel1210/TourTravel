@@ -403,6 +403,59 @@ nav ul li a:hover{
 .offer-bookNow button:hover{
     background-color: #ffbc7c;
 }
+
+/* Start Performance */
+.performance{
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    margin: 100px auto auto auto;
+}
+
+.performance-hero{
+    max-width: 500px;
+}
+.right-content-performance{
+    max-width: 600px;
+    padding-top: 50px;
+}
+.right-content-performance h4{
+    color: #FFA451;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.right-content-performance h1{
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+.right-content-performance p{
+    font-size: 20px;
+    max-width: 485px;
+}
+.perform{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.performs{
+    max-width: 130px;;
+}
+
+.perform h2{
+    color: #FFA451;
+    font-size: 40px;
+    font-weight:900;;
+    margin: 0;
+}
+.perform p{
+    padding-top: 0;
+    font-weight: 600;;
+    margin-top: 5px;
+}
+/* End Performance */
 @media(max-width:1250px){
     .service-cards{
         /* Mengatur posisi item dari flex agar berada bagian pinggir bawaah container flex */
@@ -456,9 +509,15 @@ nav ul li a:hover{
     nav ul li a{
         color: white;
     }
-
     .card-carousel{
         width: 420px;
+    }
+    .performance{
+        flex-direction: column;
+        align-items: center;
+    }
+    .right-content-performance{
+        padding-top: 10px;
     }
 
 }
@@ -482,5 +541,20 @@ nav ul li a:hover{
     .checkbox-icon-container{
         flex-direction: column;
         gap: 0;
+    }
+    .right-content-performance h1{
+        font-size: 30px;
+    }
+    .right-content-performance p{
+        font-size: 18px;
+    }
+    .performance-hero{
+        width: 300px;
+    }
+    .perform h2{
+        font-size: 30px;
+    }
+    .perform p{
+        font-size: 18px;
     }
 }
