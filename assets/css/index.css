@@ -456,6 +456,41 @@ nav ul li a:hover{
     margin-top: 5px;
 }
 /* End Performance */
+/* start review */
+.review{
+    display: flex;
+    margin: 100px auto auto auto;
+    max-width: 1200px
+}
+.review-content {
+    max-width: 700px ;
+}
+.review-content h4{
+    color: #FFA451;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.review-content h2{
+    font-size: 30px;
+    max-width: 500px;
+    margin-top: 0;
+}
+.review-content p{
+    font-size: 14px;
+    max-width: 500px;
+    text-align: justify;
+}
+.review-slider{
+    width: 500px;
+}
+.review-card{
+    max-width: 500px;
+}
+.review-card img{
+    width: 100%;
+}
+/* end review */
 @media(max-width:1250px){
     .service-cards{
         /* Mengatur posisi item dari flex agar berada bagian pinggir bawaah container flex */
@@ -556,5 +591,8 @@ nav ul li a:hover{
     }
     .perform p{
         font-size: 18px;
+    }
+    .review{
+        flex-direction: column;
     }
 }

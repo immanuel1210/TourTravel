@@ -1,7 +1,7 @@
 const menuIcon = document.querySelector('.menu-toggle');
 const menuActive = document.querySelector('ul');
 const serviceCard = document.querySelector('.service-card');
-
+// const reviewCard = document.querySelector('.review-slider');
 // var widthScreen = window.innerWidth; 
 // Variabel maka hanya akan mengambil lebar layar sekali saja diawal
 
@@ -23,6 +23,21 @@ var swiper = new Swiper(".destination-cards", {
     prevEl: ".bx-chevron-left-circle",
 },
 });
+
+var swiper = new Swiper(".review-slider", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 function navMenu(){
     menuIcon.classList.toggle('bxs-grid-alt');
     menuIcon.classList.toggle('bx-x');
