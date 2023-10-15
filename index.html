@@ -39,31 +39,32 @@
                         </div>
                     </div>
                     <div class="schedule">
+                        <form action="" id="form-schedule">
                         <div class="locdate-wrapper">
-                                <h5>Get the schedule</h5>
-                                <div class="location wrapper">
-                                    <i class='bx bx-map-pin' ></i>
-                                    <div class="location-form">
-                                        <h5>Location <span class='bx bx-chevron-down'></span></h5>
-                                        <div class="box">
-                                            <h6>Jakarta Indonesia</h6>
+                        <h5 class="heading-schedule">Get the schedule</h5>
+                                    <div class="location wrapper">
+                                        <i class='bx bx-map-pin' ></i>
+                                        <div class="location-form">
+                                            <label for="lokasi"><h5>Location <span class='bx bx-chevron-down'></span></h5></label>
+                                            <select name="lokasi" id="lokasi" class="box">
+                                                <option value="Jakarta">Jakarta Indonesia</option>
+                                                <option value="Medan">Medan Indonesia</option>
+                                                <option value="Palembang">Palembang Indonesia</option>
+                                                <option value="Surabaya">Surabaya Indonesia</option>
+                                            </select>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="date wrapper">
-                                    <i class='bx bxs-calendar-alt'></i>
-                                    <div class="date-form">
-                                        <h5>Date <span class="bx bx-chevron-down"></span></h5>
-                                        <div class="box">
-                                            <h6>28/08/21</h6>
+                                    <div class="date wrapper">
+                                        <i class='bx bxs-calendar-alt'></i>
+                                        <div class="date-form">
+                                            <label for="date"><h5>Date <span class="bx bx-chevron-down"></span></h5></label>
+                                            <input type="date" class="box" id="date"></div>
                                         </div>
-                                    </div>
+                                        <button type="submit" id="schedule-submit" class="bx bx-search">
+                                        </button>
+                                    </form>
                                 </div>
-                                <div class="search-button">
-                                    <i class='bx bx-search' ></i>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
         </div>
         <div class="content-rigth">
         <img src="assets/images/hero.svg" alt="hero" class="hero">
@@ -278,6 +279,56 @@
             <div class="swiper-pagination"></div>
           </div>
     </section>
+    <section class="disc">
+        <div class="disc-heading">
+            <h1>ARE YOU NEW MEMBER FOR THIS TRIP ?</h1>
+            <p>Let's register now and get cashback </p>
+            <button class="btn-discount">UP TO 20%</button>
+        </div>
+        <button class="btn-register">REGISTER</button>
+    </section>
+    <footer>
+        <div class="socmed">
+            <h1>Tour<span>avel.</span></h1>
+            <p>The best service to customer is our top priority in building business</p>
+            <div class="socmed-img">
+                <a href=""><i class='bx bxl-instagram-alt' ></i></a>
+                <a href=""><i class='bx bxl-facebook-circle' ></i></a>
+                <a href=""><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p class="copyright">&copy; Copyright 2021 All right reserved | Built by Mardha Mardiya</p>
+        </div>
+        <div class="f about">
+            <h3>About</h3>
+            <h5>About Us</h5>
+            <h5>Features</h5>
+            <h5>News</h5>
+            <h5>Menu</h5>
+        </div>
+        <div class="f company">
+            <h3>Company</h3>
+            <h5>Why Touravel ?</h5>
+            <h5>Partner with Us</h5>
+            <h5>FAQ</h5>
+            <h5>Blogs</h5>
+        </div>
+        <div class="f support">
+            <h3>Support</h3>
+            <h5>Account</h5>
+            <h5>Support center</h5>
+            <h5>Feedback</h5>
+            <h5>Contact us</h5>
+            <h5>Accessbility</h5>
+        </div>
+        <div class="f getintouch">
+            <h3>Get in Touch</h3>
+            <h5>Question or Feedback</h5>
+            <form action="" class="form-getintouch">
+                <input type="text" id="email" value="Type your email" style="padding: 10px;"><br>
+                <input type="submit" id="send-email" value="Send">
+            </form>
+        </div>
+    </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="assets/js/index.js"></script>

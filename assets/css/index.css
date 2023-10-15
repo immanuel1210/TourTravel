@@ -98,7 +98,7 @@ nav ul li a:hover{
 .schedule{
     margin-top: 100px;
 }
-.locdate-wrapper>h5{
+.heading-schedule{
     background-color:#1F4590;
     color: white;
     border: none;
@@ -133,7 +133,9 @@ nav ul li a:hover{
 .box{
     background-color: white;
     width: 145px;
-    border-radius: 10px;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
 }
 .box h6{
     text-align: center;
@@ -165,6 +167,13 @@ nav ul li a:hover{
     background-color:#FFA451;
     padding: 25px;
     border-radius: 100px;
+    border: none;
+}
+#schedule-submit:hover{
+    background-color:#1F4590 ;
+}
+.bx-search:hover{
+    color: #FFA451;
 }
 .wrapper h5{
     margin: 0;
@@ -176,7 +185,10 @@ nav ul li a:hover{
     margin:60px auto auto auto;
     /* position: absolute; */
 }
-
+/* #form-schedule{
+    display: flex;
+    align-items: baseline;
+} */
 /* service */
 .service{
     text-align: center;
@@ -490,7 +502,112 @@ nav ul li a:hover{
 .review-card img{
     width: 100%;
 }
+.swiper-pagination{
+    transform: translateY(10px);
+}
 /* end review */
+/*Start Disc */
+.disc{
+    background-color: #FFA451;
+    max-width: 1200px;
+    border-radius: 20px;
+    display: flex;
+    margin: 100px auto auto auto;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+.disc p{
+    font-size: 20px;
+}
+.btn-discount{
+    border: none;
+    border-radius: 20px;
+    background-color: #B8886A;
+    color: white;
+    padding: 30px 70px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.btn-discount:hover{
+    background-color:#ffb689;
+}
+.btn-register{
+    background-color: #1F4590;
+    border: none;
+    border-radius: 60px;
+    color: white;
+    padding: 30px 60px;
+    font-size: 25px;
+    font-weight: 700;
+    align-self: center;
+}
+.btn-register:hover{
+    background-color: #3170ef;
+}
+/*End Disc */
+/* Start Footer  */
+footer{
+    display: flex;
+    width: 1200px;
+    margin: 100px auto auto auto;
+    justify-content: space-between;
+}
+.socmed{
+    flex-basis: 480px;
+}
+.socmed h1{
+    color: #1F4590;
+    font-weight: 600;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.socmed span{
+    color: #FFA451;
+    font-size: 40px;
+    font-weight: 600;
+}
+.socmed p{
+    font-size: 20   px;
+    margin-top: 0;
+    /* font-weight: 700; */
+}
+.bxl-instagram-alt{
+    font-size: 50px;
+    color: #1F4590;
+}
+.bxl-facebook-circle{
+    font-size: 50px;
+    color: #1F4590;
+}
+.bxl-twitter{
+    font-size: 50px;
+    color: #1F4590;
+}
+.socmed .copyright{
+    font-size: 14px;
+}
+.f h5{
+    font-weight: 100;
+}
+.form-getintouch{
+    text-align: center;
+}
+#email{
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+}
+#send-email{
+    padding: 10px 30px;
+    background-color: #FFA451;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+/* End Footer  */
 @media(max-width:1250px){
     .service-cards{
         /* Mengatur posisi item dari flex agar berada bagian pinggir bawaah container flex */
@@ -594,5 +711,16 @@ nav ul li a:hover{
     }
     .review{
         flex-direction: column;
+    }
+    .review-slider{
+        width: 350px;
+    }
+    .swiper-pagination{
+        transform: translateY(10px);
+    }
+    .disc{
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
     }
 }
