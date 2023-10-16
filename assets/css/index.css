@@ -623,6 +623,18 @@ footer{
     .service-cards{
         height: 600px;
     }
+    footer{
+        display: block;
+        width: auto;
+    }
+    .socmed{
+        margin: 0   ;
+        text-align: center;
+    }
+    .f{
+        display: none;
+    }
+
 }
 @media (max-width:975px){
     header{
